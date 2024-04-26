@@ -2,6 +2,11 @@
 
 ## Overview
 
+Ekara is a fully hybrid platform, capable of monitoring 100% of existing applications and ensuring the availability and performance of your environment (intranet and internet).
+Ekara robots execute scenarios (user journeys) according to a predefined schedule.
+The scenario results are the scenario status and the duration of every step as well as browser's metrics for Web applications.
+
+The Zabbix Ekara Template is useful for real_time monitoring. For user journeys (scenarios) configuration and a deepen analysis, access the Ekara Portal directly.
 The template is designed to interface with Ekara APIs to display in customized dashboards :
 * Scenarios statuses,
 * Trigger problem event based on scenario status,
