@@ -165,7 +165,7 @@ zabbix_export:
           type: DEPENDENT
           key: get.apps.active.scenarios.check
           delay: '0'
-          history: '0'
+          history: 7d
           trends: '0'
           value_type: CHAR
           description: 'Data collection check'
@@ -175,7 +175,6 @@ zabbix_export:
               parameters:
                 - $.error
               error_handler: CUSTOM_VALUE
-              error_handler_params: 'No error'
             -
               type: DISCARD_UNCHANGED_HEARTBEAT
               parameters:
@@ -340,7 +339,7 @@ zabbix_export:
           type: DEPENDENT
           key: get.scenarios.statuses.check
           delay: '0'
-          history: '0'
+          history: 7d
           trends: '0'
           value_type: CHAR
           description: 'Data collection check'
@@ -350,7 +349,6 @@ zabbix_export:
               parameters:
                 - $.error
               error_handler: CUSTOM_VALUE
-              error_handler_params: 'No error'
             -
               type: DISCARD_UNCHANGED_HEARTBEAT
               parameters:
@@ -447,6 +445,7 @@ zabbix_export:
               type: DEPENDENT
               key: 'get.scenarios.results.check[{#SCENARIO.ID}]'
               delay: '0'
+              history: 7d
               trends: '0'
               value_type: CHAR
               description: 'Data collection check'
@@ -456,7 +455,6 @@ zabbix_export:
                   parameters:
                     - $.error
                   error_handler: CUSTOM_VALUE
-                  error_handler_params: 'No error'
                 -
                   type: DISCARD_UNCHANGED_HEARTBEAT
                   parameters:
